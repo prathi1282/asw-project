@@ -1,0 +1,111 @@
+API-GATEWAY:
+================
+API stands for Application Program Interface. An API Gateway is a management tool that 
+acts as an interface between users and microservices
+
+API Gateway is a type of server that provides the service 
+of API which is used to customize each client.
+
+It acts as a gateway between client applications and backend services, handling 
+requests and routing them to the appropriate service. It simplifies API management, 
+reduces infrastructure 
+complexity, and scales automatically to meet the demand.
+
+===========================================
+EX: https://siddhivinayak-sk.medium.com/api-gateways-netflix-oss-zuul-vs-spring-cloud-gateway-8b12a1089f87
+
+The Netflix API Gateway is the most popular example of API Gateway. Many e‑commerce 
+site uses an API gateway to provide the endpoint for retrieving the details of all 
+products from mobile clients with only a single request. So, This invokes many 
+different services like 
+the proper information of product, and product reviews and then combines the results.
+
+==================================================================
+How Amazon API Gateway Works?
+Amazon API Gateway acts as an interface between client applications and backend services.
+ When a client sends a request, the API Gateway routes it to the appropriate backend 
+service based on the API configuration. Once the backend processes the request, the 
+service sends a 
+response back to the API Gateway, which then passes it to the client.
+
+FLOW ::::      Client Request → API Gateway → Backend Service 
+(AWS Lambda, EC2, etc.) → Response → API Gateway → Client
+
+====================================================================
+Benefits Of Amazon API Gateway
+
+Simple to Use: The AWS console provides very simple UI to use API GW which make its 
+easy to manage and monitoring APIs.
+
+Scalable: Usually Amazon web services maintains very high scalable API gate ways then 
+only they can handle the heavy demanding workloads.
+
+High Secure: API Gateway offers several capabilities, like custom authorizers and 
+IAM integration, to help secure APIs.
+
+Exposes Backend Services: We can expose backend services to external clients, 
+such web applications, mobile applications, and other APIs, with the use of API gateways.
+
+============================================================
+TYPES OF API :
+
+HTTP API :
+An HTTP API (Hypertext Transfer Protocol Application Programming Interface) is a set 
+of rules and endpoints that allows applications to communicate with each other over 
+the HTTP protocol. It enables 
+the exchange of data between client and server systems.
+
+REST API :
+A REST API is an application programming interface (API) that follows the design principles of the REST architectural style. REST is short for representational state transfer, and is a set 
+of rules and guidelines about how you should build a web API.
+
+
+WEBSOCKET API :
+WebSocket API: WebSocket API allows us to create web sockets, it is a javascript API that is capable of full-duplex communication using a TCP connection. 
+WebSocket uses port 80 by default.
+
+Bidirectional means data can be sent and received by both sides client-side as well as the server-side.
+Use of full-duplex model for communication.
+It uses a single TCP connection for communication between the client and server.
+Mainly used in real-time applications like chat applications, video calls applications, etc.
+Fast transmission of data can be achieved using web sockets.
+Scaling is possible but only vertically.
+
+
+==================================================
+METHODS OF API : 
+--------------------
+API methods, often HTTP methods, specify the type of action a client wants
+ to perform on an API resource, with common methods including GET (retrieve), 
+POST (create), PUT (update), PATCH (partially update), and DELETE (remove). 
+
+1. GET:
+Purpose: Retrieves data or information from a resource.
+Example: Fetching a user's profile details. 
+
+2. POST:
+Purpose: Creates a new resource or submits data to be processed.
+Example: Creating a new user account or submitting a form.
+ 
+3. PUT:
+Purpose: Updates an existing resource by replacing it with the provided data.
+Example: Updating a user's profile with entirely new information. 
+
+4. PATCH:
+Purpose: Partially updates an existing resource, applying changes without replacing the entire resource.
+Example: Changing only a user's email address, leaving other fields unchanged.
+ 
+5. DELETE:
+Purpose: Deletes a specific resource.
+Example: Removing a user account or deleting a post. 
+
+=======================================================
+
+
+
+
+
+
+
+
+
