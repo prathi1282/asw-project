@@ -1,0 +1,22 @@
+docker ......virtual machines .....
+o.s ......image (/bin/lib files ....any os. can be downloaded)
+......insall services .....conatinerisation....
+======================================================
+linux machine .....update ......
+install docker .....version 
+install git -------version
+start the docker
+check the images , running containers........no images , no containers 
+=================================================================
+pull the images from the repository(centralised repo)
+>docker pull ubuntu
+>docker images
+>docker ps (run the container )
+>docker ps -a(conatiners)
+
+>docker run -itd ubuntu (interactive terminal detached )
+>docker ps (conatiner id running)
+=================================================
+image.......run image(ubuntu)====>container........>running container i.d
+.........
+>to run different versions of same o.s .......one image (ubuntu o.s)
